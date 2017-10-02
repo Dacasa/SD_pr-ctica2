@@ -2,10 +2,73 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Registro</title>
+<style>
+	td {text-align: left; padding: 2px; }
+	th {text-align: center; padding: 2px; color:blue; font-size:200%} 
+	table{
+		border: 1px solid black; 
+		text-align: center; 
+		border-spacing: 5px;
+		
+	}
+</style>
 </head>
+
 <body>
-<p>test</p>
+		 
+	<form action="/action_page.php" method="get" style="text-align:center">
+	<table>
+		<tr> 
+	 		<th colspan="2">
+	 			Registro de jugadores de "Hundir la flota"
+	 		</th>
+	 	</tr>
+		<tr>
+			<td>Nombre(*):</td> 
+			<td><input type="text" name="nombre" required></td> 
+		</tr>
+		<tr>
+			<td> Primer apellido(*):</td> 
+			<td> <input type="text" name="apellido1" required> </td>
+		</tr>
+		<tr>
+			<td> Segundo apellido: </td> 
+			<td> <input type="text" name="apellido2"> </td> 
+		</tr>
+		<tr>
+			<td> DNI(*): </td> 
+			<td> <input type="text" name="dni" required></td> 
+		</tr>
+		<tr>
+			<td>Email: </td>
+			<td> <input type="text" name="email"> </td>
+		</tr>
+		<tr>
+			<td>Tipo de pago(*):   </td>  
+				<td>
+					<input type="radio" name="pago" required> Contrareembolso
+					<input type="radio" name="pago" required> Tarjeta VISA
+				 	<input type="radio" name="pago" required> Cheque 
+				 </td>
+		</tr>
+		<tr>						 
+			<td> Contraseña(*): </td>
+			<td> <input type="text" name="pass" required> </td>
+		</tr>
+		<tr>
+			<td> Repita su contraseña(*): </td>
+			<td> <input type="text" name="repass" required></td>
+		</tr>
+		<tr>
+			<td> <input type="submit" value="Enviar Datos"> </td>
+			<td> <input type="reset" value="Borrar datos"> </td>
+		</tr>
+	
+	</table>
+	</form>
+		
+	<h4 style="text-align:left">(*)Los campos con asterisco son obligatorios. </h4>
 
 </body>
 </html>
