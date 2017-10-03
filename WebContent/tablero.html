@@ -13,7 +13,57 @@ td {width:50px}
 <body>
 	<h1>Tableros de juego</h1>
 	<h2>Tablero con menus de selección</h2>
-		<form>
+		<form action="/action_page.php" method="get">
+		<table style="border:1px solid black">
+			<tr>
+				<td></td>
+				<td>A</td>
+				<td>B</td>
+				<td>C</td>
+				<td>D</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td style="background-color:blue"></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td></td>
+				<td style="background-color:red"></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td></td>
+				<td style="background-color:red"></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td style="background-color:orange"></td>
+			</tr>
+		</table>
+		<select>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+		</select>
+		<select>
+			<option value="A">A</option>
+			<option value="B">B</option>
+			<option value="C">C</option>
+			<option value="D">D</option>
+		</select>
+		<input type="submit" value="Enviar">
 		</form>
 
 	<h2>Tablero con botones en casillas</h2>
@@ -35,24 +85,24 @@ td {width:50px}
 			</tr>
 			<tr>
 				<td>2</td>
-				<td><input type="radio" name="casilla" value="2,1" checked></td>
+				<td><input type="radio" name="casilla" value="2,1"></td>
 				<td style="background-color:red"><input type="radio" name="casilla" value="2,2"></td>
 				<td><input type="radio" name="casilla" value="2,3"></td>
 				<td><input type="radio" name="casilla" value="2,4"></td>
 			</tr>
 			<tr>
 				<td>3</td>
-				<td><input type="radio" name="casilla" value="3,1" checked></td>
+				<td><input type="radio" name="casilla" value="3,1"></td>
 				<td style="background-color:red"><input type="radio" name="casilla" value="3,2"></td>
 				<td><input type="radio" name="casilla" value="3,3"></td>
 				<td><input type="radio" name="casilla" value="3,4"></td>
 			</tr>
 			<tr>
 				<td>4</td>
-				<td><input type="radio" name="casilla" value="4,1" checked></td>
+				<td><input type="radio" name="casilla" value="4,1"></td>
 				<td><input type="radio" name="casilla" value="4,2"></td>
 				<td><input type="radio" name="casilla" value="4,3"></td>
-				<td style="background-color:yellow"><input type="radio" name="casilla" value="4,4"></td>
+				<td style="background-color:orange"><input type="radio" name="casilla" value="4,4"></td>
 			</tr>
 		</table>
 		<input type="submit" value="Enviar">
