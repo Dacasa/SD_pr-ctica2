@@ -6,49 +6,51 @@
 <style>
 body {text-align:center}
 h1 {color:blue;font-size:300%;}
-table {align:center;text-align:center;margin: 0 auto;}
-td {width:50px}
+table.primera {align:center;text-align:center;margin: 0 auto;border:1px solid black}
+table.segunda {align:center;text-align:center;margin: 0 auto;}
+td.primera {width:50px;border:1px solid black}
+td.segunda {width:50px}
 </style>
 </head>
 <body>
 	<h1>Tableros de juego</h1>
 	<h2>Tablero con menus de selección</h2>
-		<form action="/action_page.php" method="get">
-		<table style="border:1px solid black">
+		<form action="" method="get">
+		<table class="primera">
 			<tr>
-				<td></td>
-				<td>A</td>
-				<td>B</td>
-				<td>C</td>
-				<td>D</td>
+				<td class="primera"></td>
+				<td class="primera">A</td>
+				<td class="primera">B</td>
+				<td class="primera">C</td>
+				<td class="primera">D</td>
 			</tr>
 			<tr>
-				<td>1</td>
-				<td style="background-color:blue"></td>
-				<td></td>
-				<td></td>
-				<td></td>
+				<td class="primera">1</td>
+				<td class="primera" style="background-color:blue"></td>
+				<td class="primera"></td>
+				<td class="primera"></td>
+				<td class="primera"></td>
 			</tr>
 			<tr>
-				<td>2</td>
-				<td></td>
-				<td style="background-color:red"></td>
-				<td></td>
-				<td></td>
+				<td class="primera">2</td>
+				<td class="primera"></td>
+				<td class="primera" style="background-color:red"></td>
+				<td class="primera"></td>
+				<td class="primera"></td>
 			</tr>
 			<tr>
-				<td>3</td>
-				<td></td>
-				<td style="background-color:red"></td>
-				<td></td>
-				<td></td>
+				<td class="primera">3</td>
+				<td class="primera"></td>
+				<td class="primera" style="background-color:red"></td>
+				<td class="primera"></td>
+				<td class="primera"></td>
 			</tr>
 			<tr>
-				<td>4</td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td style="background-color:orange"></td>
+				<td class="primera">4</td>
+				<td class="primera"></td>
+				<td class="primera"></td>
+				<td class="primera"></td>
+				<td class="primera" style="background-color:orange"></td>
 			</tr>
 		</table>
 		<select>
@@ -67,42 +69,42 @@ td {width:50px}
 		</form>
 
 	<h2>Tablero con botones en casillas</h2>
-		<form action="/action_page.php" method="get">
-		<table>
+		<form action="" method="get">
+		<table class="segunda">
 			<tr>
-				<td></td>
-				<td>A</td>
-				<td>B</td>
-				<td>C</td>
-				<td>D</td>
+				<td class="segunda"></td>
+				<td class="segunda">A</td>
+				<td class="segunda">B</td>
+				<td class="segunda">C</td>
+				<td class="segunda">D</td>
 			</tr>
 			<tr>
-				<td>1</td>
-				<td style="background-color:blue"><input type="radio" name="casilla" value="1,1" checked></td>
-				<td><input type="radio" name="casilla" value="1,2"></td>
-				<td><input type="radio" name="casilla" value="1,3"></td>
-				<td><input type="radio" name="casilla" value="1,4"></td>
+				<td class="segunda">1</td>
+				<td style="background-color:blue"><input type="radio" name="casilla" required value="1,1"></td>
+				<td class="segunda"><input type="radio" name="casilla" required value="1,2"></td>
+				<td class="segunda"><input type="radio" name="casilla" required value="1,3"></td>
+				<td class="segunda"><input type="radio" name="casilla" required value="1,4"></td>
 			</tr>
 			<tr>
-				<td>2</td>
-				<td><input type="radio" name="casilla" value="2,1"></td>
-				<td style="background-color:red"><input type="radio" name="casilla" value="2,2"></td>
-				<td><input type="radio" name="casilla" value="2,3"></td>
-				<td><input type="radio" name="casilla" value="2,4"></td>
+				<td class="segunda">2</td>
+				<td class="segunda"><input type="radio" name="casilla" required value="2,1"></td>
+				<td style="background-color:red"><input type="radio" name="casilla" required value="2,2"></td>
+				<td class="segunda"><input type="radio" name="casilla" required value="2,3"></td>
+				<td class="segunda"><input type="radio" name="casilla" required value="2,4"></td>
 			</tr>
 			<tr>
-				<td>3</td>
-				<td><input type="radio" name="casilla" value="3,1"></td>
-				<td style="background-color:red"><input type="radio" name="casilla" value="3,2"></td>
-				<td><input type="radio" name="casilla" value="3,3"></td>
-				<td><input type="radio" name="casilla" value="3,4"></td>
+				<td class="segunda">3</td>
+				<td class="segunda"><input type="radio" name="casilla" required value="3,1"></td>
+				<td style="background-color:red"><input type="radio" name="casilla" required value="3,2"></td>
+				<td class="segunda"><input type="radio" name="casilla" required value="3,3"></td>
+				<td class="segunda"><input type="radio" name="casilla" required value="3,4"></td>
 			</tr>
 			<tr>
-				<td>4</td>
-				<td><input type="radio" name="casilla" value="4,1"></td>
-				<td><input type="radio" name="casilla" value="4,2"></td>
-				<td><input type="radio" name="casilla" value="4,3"></td>
-				<td style="background-color:orange"><input type="radio" name="casilla" value="4,4"></td>
+				<td class="segunda">4</td>
+				<td class="segunda"><input type="radio" name="casilla" required value="4,1"></td>
+				<td class="segunda"><input type="radio" name="casilla" required value="4,2"></td>
+				<td class="segunda"><input type="radio" name="casilla" required value="4,3"></td>
+				<td style="background-color:orange"><input type="radio" name="casilla" required value="4,4"></td>
 			</tr>
 		</table>
 		<input type="submit" value="Enviar">
