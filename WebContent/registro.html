@@ -5,13 +5,13 @@
 <title>Registro</title>
 <style>
 	body {text-align:center}
+	fieldset {text-align:left;border-spacing: 5px;margin: 0 auto;width:80%}
+	legend {padding: 2px; color:blue; font-size:200%;font-weight:bold;}
 	td {text-align: left; padding: 2px; }
 	th {text-align: center; padding: 2px; color:blue; font-size:200%} 
-	table{
-		border: 1px solid black; 
+	table{ 
 		text-align: center; 
 		border-spacing: 5px;
-		margin: 0 auto;
 	}
 </style>
 </head>
@@ -19,12 +19,9 @@
 <body>
 		 
 	<form action="" method="get" style="text-align:center">
+	<fieldset>
+	<legend>Registro de jugadores de "Hundir la flota"</legend>
 	<table>
-		<tr> 
-	 		<th colspan="2">
-	 			Registro de jugadores de "Hundir la flota"
-	 		</th>
-	 	</tr>
 		<tr>
 			<td>Nombre(*):</td> 
 			<td><input type="text" name="nombre" required></td> 
@@ -46,7 +43,7 @@
 			<td> <input type="text" name="email"> </td>
 		</tr>
 		<tr>
-			<td>Tipo de pago(*):   </td>  
+			<td>Tipo de pago(*):</td>  
 				<td>
 					<input type="radio" name="pago" required> Contrareembolso
 					<input type="radio" name="pago" required> Tarjeta VISA
@@ -67,8 +64,9 @@
 		</tr>
 		
 	</table>
-	</form>
+	</fieldset>
 	(*)Los campos con asterisco son obligatorios.
+	</form>
 
 </body>
 </html>
